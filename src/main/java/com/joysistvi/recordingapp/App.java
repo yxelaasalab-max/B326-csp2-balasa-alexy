@@ -26,10 +26,10 @@ public class App {
         ArtistRepo artistRepository = new ArtistRepoImpl(dbConnection);
         ArtistService artistService = new ArtistServiceImpl(artistRepository);
         ArtistController artistController = new ArtistController(artistService);
-        ArtistView artistTempView = new ArtistView(artistController, scanner);
+        ArtistView artistView = new ArtistView(artistController, scanner);
 
         // Straight into Artist Management — no main menu needed yet
-        artistTempView.run();
+        artistView.run();
 
         scanner.close();
     }

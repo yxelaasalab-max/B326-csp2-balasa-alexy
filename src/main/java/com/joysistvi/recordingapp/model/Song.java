@@ -1,15 +1,15 @@
 package com.joysistvi.recordingapp.model;
 
-public class Artist {
+public class Song {
 
     private int id;
     private String name;
 
-    public Artist(String name) {
+    public Song(String name) {
         this.name = name;
     }
 
-    public Artist(int id, String name) {
+    public Song(int id, String name) {
         this.name = name;
         this.id = id;
     }
@@ -32,7 +32,7 @@ public class Artist {
 
     @Override
     public String toString() {
-        return "Artist{" +
+        return "Song{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';

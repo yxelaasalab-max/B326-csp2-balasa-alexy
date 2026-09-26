@@ -10,7 +10,7 @@ public class Main extends DbConnection {
     public static void main(String[] args) {
         DbConnection dbConnection = new DbConnection();
         ArtistDao artistDao = new ArtistDao(dbConnection);
-        artistDao.updateArtist("kapitan", 6);
+        artistDao.searchArtist("Chris Brown");
     }
 }
 
